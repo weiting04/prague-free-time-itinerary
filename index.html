@@ -625,18 +625,24 @@
         box-shadow: 0 8px 24px rgba(74, 48, 35, 0.06);
       }
       td {
-        display: grid;
-        grid-template-columns: 7rem minmax(0, 1fr);
-        gap: 12px;
-        padding: 13px 15px;
+        position: relative;
+        display: block;
+        min-height: 50px;
+        padding: 13px 15px 13px 8.25rem;
         border-bottom: 1px solid var(--line);
         font-size: 0.87rem;
+        overflow-wrap: anywhere;
       }
       td::before {
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        width: 6.65rem;
         color: var(--muted);
         font-size: 0.72rem;
         font-weight: 900;
         letter-spacing: 0.04em;
+        line-height: 1.45;
         content: attr(data-label);
       }
       tbody tr:hover { background: var(--paper-strong); }
