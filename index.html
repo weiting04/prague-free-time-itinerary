@@ -1,0 +1,1057 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="布拉格跟團第三、四天自由活動行程：舊城、查理大橋與新城區散步路線。">
+  <meta name="theme-color" content="#7d2437">
+  <title>布拉格自由活動｜第三、四天行程</title>
+  <style>
+    :root {
+      --paper: #fbf7ef;
+      --paper-strong: #fffdf8;
+      --ink: #272421;
+      --muted: #6c655d;
+      --wine: #7d2437;
+      --wine-dark: #581927;
+      --wine-soft: #f1e1e3;
+      --blue: #2f6684;
+      --blue-soft: #e3eff4;
+      --gold: #b57a2e;
+      --sage: #657563;
+      --line: #ded5c8;
+      --shadow: 0 18px 50px rgba(74, 48, 35, 0.10);
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --radius-sm: 10px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 3%, rgba(181, 122, 46, 0.11), transparent 25rem),
+        radial-gradient(circle at 94% 16%, rgba(47, 102, 132, 0.10), transparent 24rem),
+        var(--paper);
+      font-family: "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", system-ui, sans-serif;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    .skip-link {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 99;
+      padding: 10px 14px;
+      border-radius: 8px;
+      color: white;
+      background: var(--wine-dark);
+      transform: translateY(-150%);
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    .shell {
+      width: min(1180px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(125, 36, 55, 0.12);
+      background: rgba(251, 247, 239, 0.88);
+      backdrop-filter: blur(14px);
+    }
+
+    .topbar-inner {
+      min-height: 66px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--wine-dark);
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 32px;
+      height: 32px;
+      place-items: center;
+      border: 1px solid rgba(125, 36, 55, 0.25);
+      border-radius: 50%;
+      background: var(--paper-strong);
+      font-family: Georgia, serif;
+      font-size: 0.82rem;
+    }
+
+    .day-nav {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .nav-link,
+    .print-button {
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--ink);
+      background: rgba(255, 253, 248, 0.78);
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus-visible,
+    .print-button:hover,
+    .print-button:focus-visible {
+      border-color: var(--wine);
+      color: var(--wine);
+      outline: none;
+    }
+
+    .hero {
+      padding: 72px 0 42px;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--wine);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 790px;
+      margin-bottom: 20px;
+      color: var(--wine-dark);
+      font-family: Georgia, "Noto Serif TC", serif;
+      font-size: clamp(2.55rem, 7vw, 5.9rem);
+      font-weight: 600;
+      letter-spacing: -0.045em;
+      line-height: 0.98;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      margin-bottom: 26px;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.16rem);
+    }
+
+    .hero-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 13px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 253, 248, 0.82);
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .hero-chip::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      content: "";
+    }
+
+    .briefing {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      overflow: hidden;
+      margin-bottom: 70px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper-strong);
+      box-shadow: var(--shadow);
+    }
+
+    .briefing-item {
+      min-height: 132px;
+      padding: 25px 28px;
+    }
+
+    .briefing-item + .briefing-item { border-left: 1px solid var(--line); }
+
+    .briefing-kicker {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--wine);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+    }
+
+    .briefing strong {
+      display: block;
+      margin-bottom: 4px;
+      font-family: Georgia, "Noto Serif TC", serif;
+      font-size: 1.2rem;
+    }
+
+    .briefing p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .day-section {
+      margin-bottom: 86px;
+    }
+
+    .day-heading {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .day-label {
+      display: inline-flex;
+      margin-bottom: 12px;
+      padding: 6px 10px;
+      border-radius: 7px;
+      color: white;
+      background: var(--wine);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 7px;
+      color: var(--wine-dark);
+      font-family: Georgia, "Noto Serif TC", serif;
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+    }
+
+    .day-subtitle {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .day-window {
+      min-width: 185px;
+      padding: 17px 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--paper-strong);
+      text-align: right;
+    }
+
+    .day-window span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+
+    .day-window strong {
+      color: var(--wine);
+      font-family: Georgia, serif;
+      font-size: 1.35rem;
+    }
+
+    .route-card,
+    .table-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper-strong);
+      box-shadow: 0 12px 36px rgba(74, 48, 35, 0.07);
+    }
+
+    .route-card {
+      margin-bottom: 22px;
+      padding: 22px 22px 14px;
+    }
+
+    .route-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      margin-bottom: 0;
+      color: var(--ink);
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 14px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+    }
+
+    .legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      white-space: nowrap;
+    }
+
+    .legend-line {
+      width: 27px;
+      border-top: 3px solid var(--wine);
+    }
+
+    .legend-line.transit {
+      border-top-color: var(--blue);
+      border-top-style: dashed;
+    }
+
+    .route-scroll {
+      overflow-x: auto;
+      padding-bottom: 2px;
+      scrollbar-color: var(--line) transparent;
+    }
+
+    .route-scroll svg {
+      display: block;
+      min-width: 790px;
+      width: 100%;
+      height: auto;
+    }
+
+    .route-caption {
+      margin: 4px 5px 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .table-card { overflow: hidden; }
+
+    .table-note {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--line);
+      color: var(--muted);
+      background: #faf4e9;
+      font-size: 0.84rem;
+    }
+
+    .table-note strong { color: var(--wine-dark); }
+
+    .note-dot {
+      flex: 0 0 auto;
+      width: 9px;
+      height: 9px;
+      margin-top: 0.45em;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+
+    .table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      min-width: 1040px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    col.time { width: 10%; }
+    col.place { width: 19%; }
+    col.stay { width: 21%; }
+    col.transport { width: 14%; }
+    col.notice { width: 27%; }
+    col.map { width: 9%; }
+
+    thead { background: var(--wine-dark); }
+
+    th {
+      padding: 14px 15px;
+      color: white;
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    td {
+      padding: 18px 15px;
+      border-bottom: 1px solid var(--line);
+      color: #393530;
+      font-size: 0.88rem;
+      vertical-align: top;
+    }
+
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr:hover { background: #fffaf1; }
+
+    .time-text {
+      color: var(--wine);
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .place-name {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--ink);
+      font-weight: 900;
+    }
+
+    .place-meta {
+      display: block;
+      color: var(--muted);
+      font-size: 0.77rem;
+      line-height: 1.45;
+    }
+
+    .transport-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-bottom: 5px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      color: var(--wine-dark);
+      background: var(--wine-soft);
+      font-size: 0.73rem;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .transport-tag.transit {
+      color: #214f68;
+      background: var(--blue-soft);
+    }
+
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 7px 10px;
+      border-radius: 9px;
+      color: white;
+      background: var(--wine);
+      font-size: 0.77rem;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .map-link:hover,
+    .map-link:focus-visible {
+      background: var(--wine-dark);
+      outline: 3px solid rgba(125, 36, 55, 0.18);
+      outline-offset: 2px;
+    }
+
+    .map-pending {
+      color: var(--muted);
+      font-size: 0.77rem;
+      font-weight: 700;
+    }
+
+    .closing-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 22px;
+      margin-bottom: 74px;
+    }
+
+    .closing-card {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--paper-strong);
+    }
+
+    .closing-card.accent {
+      color: white;
+      border-color: var(--wine-dark);
+      background: var(--wine-dark);
+    }
+
+    .closing-card h3 {
+      margin-bottom: 14px;
+      font-family: Georgia, "Noto Serif TC", serif;
+      font-size: 1.35rem;
+    }
+
+    .closing-card.accent h3 { color: white; }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 16px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 24px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      top: 0.15em;
+      left: 0;
+      color: var(--sage);
+      font-weight: 900;
+      content: "✓";
+    }
+
+    .closing-card.accent p {
+      margin-bottom: 0;
+      color: rgba(255,255,255,0.80);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 26px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    @media (max-width: 820px) {
+      .shell { width: min(100% - 26px, 1180px); }
+      .print-button { display: none; }
+      .briefing { grid-template-columns: 1fr; }
+      .briefing-item { min-height: auto; }
+      .briefing-item + .briefing-item {
+        border-top: 1px solid var(--line);
+        border-left: 0;
+      }
+      .day-heading { grid-template-columns: 1fr; }
+      .day-window { text-align: left; }
+      .closing-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 680px) {
+      .topbar-inner { min-height: 60px; }
+      .brand-text { display: none; }
+      .nav-link { padding-inline: 12px; font-size: 0.82rem; }
+      .hero { padding: 48px 0 32px; }
+      .hero-copy { font-size: 0.98rem; }
+      .briefing { margin-bottom: 56px; }
+      .briefing-item { padding: 21px; }
+      .day-section { margin-bottom: 65px; }
+      .route-card { padding: 18px 12px 12px; }
+      .route-card-head {
+        align-items: flex-start;
+        flex-direction: column;
+        padding-inline: 4px;
+      }
+      .legend { justify-content: flex-start; }
+      .route-scroll svg { min-width: 760px; }
+
+      .table-card { overflow: visible; border: 0; background: transparent; box-shadow: none; }
+      .table-note {
+        margin-bottom: 12px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+      }
+      .table-wrap { overflow: visible; }
+      table, tbody, tr, td { display: block; width: 100%; }
+      table { min-width: 0; }
+      thead, colgroup { display: none; }
+      tbody { display: grid; gap: 12px; }
+      tbody tr {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: var(--paper-strong);
+        box-shadow: 0 8px 24px rgba(74, 48, 35, 0.06);
+      }
+      td {
+        display: grid;
+        grid-template-columns: 7rem minmax(0, 1fr);
+        gap: 12px;
+        padding: 13px 15px;
+        border-bottom: 1px solid var(--line);
+        font-size: 0.87rem;
+      }
+      td::before {
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 0.04em;
+        content: attr(data-label);
+      }
+      tbody tr:hover { background: var(--paper-strong); }
+      .checklist { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      @page { size: A4 landscape; margin: 10mm; }
+      body { color: #111; background: white; font-size: 9pt; }
+      .shell { width: 100%; }
+      .topbar { position: static; background: white; }
+      .day-nav, .print-button { display: none; }
+      .hero { padding: 22px 0; }
+      h1 { font-size: 34pt; }
+      .briefing { margin-bottom: 30px; box-shadow: none; }
+      .day-section { margin-bottom: 32px; break-before: page; }
+      .route-card, .table-card { box-shadow: none; }
+      .route-scroll { overflow: visible; }
+      .route-scroll svg { min-width: 0; }
+      table { min-width: 0; font-size: 7.5pt; }
+      th, td { padding: 7px; }
+      .map-link { color: var(--wine); background: transparent; border: 1px solid var(--wine); }
+      .closing-grid { break-before: page; margin-bottom: 20px; }
+      footer { padding: 12px 0; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要內容</a>
+
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#top" aria-label="回到頁首">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span class="brand-text">PRAGUE FREE TIME</span>
+      </a>
+      <nav class="day-nav" aria-label="頁面導覽">
+        <a class="nav-link" href="#day-3">第三天</a>
+        <a class="nav-link" href="#day-4">第四天</a>
+        <button class="print-button" type="button" onclick="window.print()">列印／存成 PDF</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top">
+      <p class="eyebrow">Prague · Self-guided moments</p>
+      <h1>布拉格<br>自由活動手帖</h1>
+      <p class="hero-copy">兩段從集合時間倒推的散步行程：第三天順著舊城走過查理大橋，第四天把新城美食與咖啡館串成一條不折返的路線。</p>
+      <div class="hero-chips" aria-label="行程摘要">
+        <span class="hero-chip">第三天 13:30 舊城廣場出發</span>
+        <span class="hero-chip">第四天 12:00–18:00 新城區</span>
+        <span class="hero-chip">已有一日地鐵票</span>
+      </div>
+    </section>
+
+    <section class="briefing shell" aria-label="出發前重點">
+      <div class="briefing-item">
+        <span class="briefing-kicker">DAY 3 PRIORITY</span>
+        <strong>LV 先逛，避免太晚</strong>
+        <p>解散後先吃冰，再直接前往巴黎街；辦理退稅請帶護照正本。</p>
+      </div>
+      <div class="briefing-item">
+        <span class="briefing-kicker">DAY 4 PRIORITY</span>
+        <strong>一開始就先吃 Kantýna</strong>
+        <p>店家不接受訂位，越晚越可能排隊；用餐後再開始新城散步。</p>
+      </div>
+      <div class="briefing-item">
+        <span class="briefing-kicker">MEETING BUFFER</span>
+        <strong>17:15 離開 Café Imperial</strong>
+        <p>保留約 45 分鐘回集合點；實際路線以領隊公布的位置為準。</p>
+      </div>
+    </section>
+
+    <section class="day-section shell" id="day-3">
+      <div class="day-heading">
+        <div>
+          <span class="day-label">Day 03 · Old Town</span>
+          <h2>舊城甜點、精品街與查理大橋</h2>
+          <p class="day-subtitle">大部分路段步行即可，穿過查理大橋後在小城區提早吃晚餐。</p>
+        </div>
+        <div class="day-window">
+          <span>自由活動開始</span>
+          <strong>13:30</strong>
+        </div>
+      </div>
+
+      <article class="route-card" aria-labelledby="route-3-title">
+        <div class="route-card-head">
+          <h3 id="route-3-title">第三天路線圖</h3>
+          <div class="legend" aria-label="路線圖圖例">
+            <span class="legend-item"><span class="legend-line"></span>步行</span>
+            <span class="legend-item"><span class="legend-line transit"></span>大眾運輸／回程可用</span>
+          </div>
+        </div>
+        <div class="route-scroll" tabindex="0" aria-label="第三天路線圖，手機可左右滑動">
+          <svg viewBox="0 0 1040 280" role="img" aria-labelledby="day3-map-title day3-map-desc">
+            <title id="day3-map-title">第三天舊城至小城區路線</title>
+            <desc id="day3-map-desc">由舊城廣場步行到 Amorino、Louis Vuitton、舊城與查理大橋，再到 Pork's Mostecka；用餐後可搭大眾運輸回程。</desc>
+            <defs>
+              <marker id="arrow-walk-3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#7d2437"></path>
+              </marker>
+              <marker id="arrow-transit-3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f6684"></path>
+              </marker>
+            </defs>
+
+            <path d="M95 132 L275 132" fill="none" stroke="#7d2437" stroke-width="5" marker-end="url(#arrow-walk-3)"></path>
+            <path d="M300 132 L480 132" fill="none" stroke="#7d2437" stroke-width="5" marker-end="url(#arrow-walk-3)"></path>
+            <path d="M505 132 L715 132" fill="none" stroke="#7d2437" stroke-width="5" marker-end="url(#arrow-walk-3)"></path>
+            <path d="M740 132 L925 132" fill="none" stroke="#7d2437" stroke-width="5" marker-end="url(#arrow-walk-3)"></path>
+            <path d="M950 154 C958 206, 880 230, 808 216" fill="none" stroke="#2f6684" stroke-width="4" stroke-dasharray="10 9" marker-end="url(#arrow-transit-3)"></path>
+
+            <g fill="#6c655d" font-size="14" font-weight="700" text-anchor="middle">
+              <text x="185" y="105">步行 2–3 分</text>
+              <text x="390" y="105">步行約 5 分</text>
+              <text x="610" y="105">散步 60–80 分</text>
+              <text x="833" y="105">過橋後約 5 分</text>
+              <text x="882" y="244" fill="#2f6684">回程可搭電車／地鐵</text>
+            </g>
+
+            <g text-anchor="middle" font-family="PingFang TC, Microsoft JhengHei, sans-serif">
+              <g transform="translate(82 132)">
+                <circle r="24" fill="#fffdf8" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#7d2437" font-size="17" font-weight="900">1</text>
+                <text y="58" fill="#272421" font-size="16" font-weight="900">舊城廣場</text>
+                <text y="80" fill="#6c655d" font-size="13">13:30 解散</text>
+              </g>
+              <g transform="translate(287 132)">
+                <circle r="24" fill="#fffdf8" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#7d2437" font-size="17" font-weight="900">2</text>
+                <text y="58" fill="#272421" font-size="16" font-weight="900">Amorino</text>
+                <text y="80" fill="#6c655d" font-size="13">花瓣冰淇淋</text>
+              </g>
+              <g transform="translate(492 132)">
+                <circle r="24" fill="#fffdf8" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#7d2437" font-size="17" font-weight="900">3</text>
+                <text y="58" fill="#272421" font-size="16" font-weight="900">Louis Vuitton</text>
+                <text y="80" fill="#6c655d" font-size="13">巴黎街</text>
+              </g>
+              <g transform="translate(727 132)">
+                <circle r="24" fill="#fffdf8" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#7d2437" font-size="17" font-weight="900">4</text>
+                <text y="58" fill="#272421" font-size="16" font-weight="900">舊城散步</text>
+                <text y="80" fill="#6c655d" font-size="13">Karlova 街・查理大橋</text>
+              </g>
+              <g transform="translate(938 132)">
+                <circle r="24" fill="#7d2437" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#ffffff" font-size="17" font-weight="900">5</text>
+                <text y="58" fill="#272421" font-size="16" font-weight="900">Pork's Mostecka</text>
+                <text y="80" fill="#6c655d" font-size="13">小城區晚餐</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <p class="route-caption">手機觀看可左右滑動路線圖；各段時間為一般步行估算，拍照、排隊與人潮另計。</p>
+      </article>
+
+      <article class="table-card" aria-label="第三天詳細行程">
+        <div class="table-note"><span class="note-dot"></span><span><strong>安排邏輯：</strong>先完成可能提早打烊的精品店，再一路往西過橋；全程不必搭地鐵，回程再善用一日票。</span></div>
+        <div class="table-wrap">
+          <table>
+            <colgroup>
+              <col class="time"><col class="place"><col class="stay"><col class="transport"><col class="notice"><col class="map">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">時間</th>
+                <th scope="col">地點</th>
+                <th scope="col">建議停留／內容</th>
+                <th scope="col">交通方式</th>
+                <th scope="col">注意事項</th>
+                <th scope="col">Google Maps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="時間"><span class="time-text">13:30–13:35</span></td>
+                <td data-label="地點"><span class="place-name">舊城廣場</span><span class="place-meta">Staroměstské náměstí</span></td>
+                <td data-label="建議停留／內容">確認解散位置與晚上回團方式，整理隨身物品後出發。</td>
+                <td data-label="交通方式"><span class="transport-tag">步行起點</span><br>解散地原地出發</td>
+                <td data-label="注意事項">先把集合點、領隊電話與飯店位置截圖，避免臨時無網路。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Old+Town+Square+Prague" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟舊城廣場">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">13:35–14:00</span></td>
+                <td data-label="地點"><span class="place-name">Amorino Gelato - Praha</span><span class="place-meta">原查詢：每日約 10:00 起營業</span></td>
+                <td data-label="建議停留／內容">點花瓣造型冰淇淋，邊走邊吃；不需久坐。</td>
+                <td data-label="交通方式"><span class="transport-tag">步行</span><br>約 2–3 分鐘</td>
+                <td data-label="注意事項">熱門時段可能排隊；若排隊超過 15 分鐘，可縮短停留以免壓縮 LV 時間。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://maps.app.goo.gl/yvmES72Yv5xYycpN8?g_st=il" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟 Amorino Gelato Praha">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">14:05–15:05</span></td>
+                <td data-label="地點"><span class="place-name">Louis Vuitton Prague</span><span class="place-meta">Pařížská 巴黎街</span></td>
+                <td data-label="建議停留／內容">看款、試背、結帳與退稅資料預留約 60 分鐘；只逛可提早離開。</td>
+                <td data-label="交通方式"><span class="transport-tag">步行</span><br>約 5 分鐘</td>
+                <td data-label="注意事項"><strong>第三天盡量早去。</strong>週末可能較早關門；辦理退稅資格程序務必帶<strong>護照正本</strong>，照片或影本不一定受理。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://maps.app.goo.gl/kYTBUsdGp8JFdaPv9?g_st=il" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟 Louis Vuitton Prague">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">15:05–16:25</span></td>
+                <td data-label="地點"><span class="place-name">舊城散步／查理大橋</span><span class="place-meta">Karlova 街 → Karlův most</span></td>
+                <td data-label="建議停留／內容">沿舊城巷弄慢走，經 Karlova 街到查理大橋；橋上拍照後往小城區前進。</td>
+                <td data-label="交通方式"><span class="transport-tag">全程步行</span><br>含散步拍照 60–80 分鐘</td>
+                <td data-label="注意事項">石板路不平，穿好走的鞋；橋上人多，手機、錢包與護照請放貼身包內。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Charles+Bridge+Prague" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟查理大橋">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">16:30–18:00</span></td>
+                <td data-label="地點"><span class="place-name">Pork's Mostecka</span><span class="place-meta">原查詢：每日約 12:00–23:30</span></td>
+                <td data-label="建議停留／內容">提早吃晚餐，主打捷克豬腳；用餐後依團體安排回飯店或續走小城區。</td>
+                <td data-label="交通方式"><span class="transport-tag">步行</span><br>過橋後約 5 分鐘</td>
+                <td data-label="注意事項"><strong>豬腳份量大，建議 2 人分食</strong>並搭配少量配菜；尖峰可能候位。回程可從 Malostranské náměstí 搭電車銜接地鐵。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://maps.app.goo.gl/ZtN9rkgJ54mDatAc9?g_st=ic" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟 Pork's Mostecka">開啟地圖</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="day-section shell" id="day-4">
+      <div class="day-heading">
+        <div>
+          <span class="day-label">Day 04 · New Town</span>
+          <h2>新城美食、廣場與經典咖啡館</h2>
+          <p class="day-subtitle">先吃無法訂位的 Kantýna，再由瓦茨拉夫廣場一路走向河岸，最後搭地鐵到 Café Imperial。</p>
+        </div>
+        <div class="day-window">
+          <span>自由活動時段</span>
+          <strong>12:00–18:00</strong>
+        </div>
+      </div>
+
+      <article class="route-card" aria-labelledby="route-4-title">
+        <div class="route-card-head">
+          <h3 id="route-4-title">第四天路線圖</h3>
+          <div class="legend" aria-label="路線圖圖例">
+            <span class="legend-item"><span class="legend-line"></span>步行</span>
+            <span class="legend-item"><span class="legend-line transit"></span>地鐵／依集合點回程</span>
+          </div>
+        </div>
+        <div class="route-scroll" tabindex="0" aria-label="第四天路線圖，手機可左右滑動">
+          <svg viewBox="0 0 1120 300" role="img" aria-labelledby="day4-map-title day4-map-desc">
+            <title id="day4-map-title">第四天新城區路線</title>
+            <desc id="day4-map-desc">從 Kantýna 步行到瓦茨拉夫廣場、Staropražské Tradiční Trdlo、Café Louvre，再搭地鐵 B 線到 Café Imperial，17:15 離開並於 18:00 前回集合點。</desc>
+            <defs>
+              <marker id="arrow-walk-4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#7d2437"></path>
+              </marker>
+              <marker id="arrow-transit-4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#2f6684"></path>
+              </marker>
+            </defs>
+
+            <path d="M87 140 L235 140" fill="none" stroke="#7d2437" stroke-width="5" marker-end="url(#arrow-walk-4)"></path>
+            <path d="M260 140 L418 140" fill="none" stroke="#7d2437" stroke-width="5" marker-end="url(#arrow-walk-4)"></path>
+            <path d="M443 140 L615 140" fill="none" stroke="#7d2437" stroke-width="5" marker-end="url(#arrow-walk-4)"></path>
+            <path d="M640 140 L812 140" fill="none" stroke="#2f6684" stroke-width="5" stroke-dasharray="10 9" marker-end="url(#arrow-transit-4)"></path>
+            <path d="M837 140 L1018 140" fill="none" stroke="#2f6684" stroke-width="5" stroke-dasharray="10 9" marker-end="url(#arrow-transit-4)"></path>
+
+            <g fill="#6c655d" font-size="14" font-weight="700" text-anchor="middle">
+              <text x="161" y="111">步行 5–8 分</text>
+              <text x="339" y="111">步行 5–10 分</text>
+              <text x="529" y="111">步行 12–15 分</text>
+              <text x="726" y="103" fill="#2f6684">地鐵 B 線 2 站</text>
+              <text x="726" y="121" fill="#2f6684">＋步行</text>
+              <text x="928" y="103" fill="#2f6684">17:15 出發</text>
+              <text x="928" y="121" fill="#2f6684">預留 45 分</text>
+            </g>
+
+            <g text-anchor="middle" font-family="PingFang TC, Microsoft JhengHei, sans-serif">
+              <g transform="translate(74 140)">
+                <circle r="24" fill="#fffdf8" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#7d2437" font-size="17" font-weight="900">1</text>
+                <text y="59" fill="#272421" font-size="16" font-weight="900">Kantýna</text>
+                <text y="81" fill="#6c655d" font-size="13">12:00 先吃午餐</text>
+              </g>
+              <g transform="translate(247 140)">
+                <circle r="24" fill="#fffdf8" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#7d2437" font-size="17" font-weight="900">2</text>
+                <text y="59" fill="#272421" font-size="16" font-weight="900">瓦茨拉夫廣場</text>
+                <text y="81" fill="#6c655d" font-size="13">新城散步</text>
+              </g>
+              <g transform="translate(430 140)">
+                <circle r="24" fill="#fffdf8" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#7d2437" font-size="17" font-weight="900">3</text>
+                <text y="59" fill="#272421" font-size="15" font-weight="900">Staropražské</text>
+                <text y="81" fill="#6c655d" font-size="13">煙囪捲小點</text>
+              </g>
+              <g transform="translate(627 140)">
+                <circle r="24" fill="#fffdf8" stroke="#7d2437" stroke-width="4"></circle>
+                <text y="6" fill="#7d2437" font-size="17" font-weight="900">4</text>
+                <text y="59" fill="#272421" font-size="16" font-weight="900">Café Louvre</text>
+                <text y="81" fill="#6c655d" font-size="13">休息／下午茶</text>
+              </g>
+              <g transform="translate(824 140)">
+                <circle r="24" fill="#fffdf8" stroke="#2f6684" stroke-width="4"></circle>
+                <text y="6" fill="#2f6684" font-size="17" font-weight="900">5</text>
+                <text y="59" fill="#272421" font-size="16" font-weight="900">Café Imperial</text>
+                <text y="81" fill="#6c655d" font-size="13">建築與輕食</text>
+              </g>
+              <g transform="translate(1030 140)">
+                <circle r="24" fill="#2f6684" stroke="#2f6684" stroke-width="4"></circle>
+                <text y="6" fill="#ffffff" font-size="17" font-weight="900">6</text>
+                <text y="59" fill="#272421" font-size="16" font-weight="900">團體集合點</text>
+                <text y="81" fill="#6c655d" font-size="13">18:00 前抵達</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <p class="route-caption">Café Louvre 至 Café Imperial：建議由 Národní třída 搭地鐵 B 線至 Náměstí Republiky，再步行約 5–7 分鐘。</p>
+      </article>
+
+      <article class="table-card" aria-label="第四天詳細行程">
+        <div class="table-note"><span class="note-dot"></span><span><strong>份量策略：</strong>Kantýna 是主餐；煙囪捲、Café Louvre 與 Café Imperial 都以少量品嚐為主，不必每間都吃完整套餐。</span></div>
+        <div class="table-wrap">
+          <table>
+            <colgroup>
+              <col class="time"><col class="place"><col class="stay"><col class="transport"><col class="notice"><col class="map">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">時間</th>
+                <th scope="col">地點</th>
+                <th scope="col">建議停留／內容</th>
+                <th scope="col">交通方式</th>
+                <th scope="col">注意事項</th>
+                <th scope="col">Google Maps</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="時間"><span class="time-text">12:00–13:00</span></td>
+                <td data-label="地點"><span class="place-name">Kantýna</span><span class="place-meta">原查詢：約 11:30 起營業</span></td>
+                <td data-label="建議停留／內容">自由活動一開始就前往吃午餐；依櫃檯流程選肉、取餐。</td>
+                <td data-label="交通方式"><span class="transport-tag">步行</span><br>由新城區解散點前往</td>
+                <td data-label="注意事項"><strong>不接受訂位，建議第一站就吃。</strong>若排隊較長，保留 60–70 分鐘；點餐可先少量再加點。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://maps.app.goo.gl/7NPaYyLVQDVkkzBA6?g_st=il" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟 Kantýna">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">13:05–13:40</span></td>
+                <td data-label="地點"><span class="place-name">瓦茨拉夫廣場</span><span class="place-meta">Václavské náměstí</span></td>
+                <td data-label="建議停留／內容">由國家博物館方向看廣場軸線，沿街散步、拍照與簡單逛店。</td>
+                <td data-label="交通方式"><span class="transport-tag">步行</span><br>約 5–8 分鐘</td>
+                <td data-label="注意事項">廣場範圍很長，不必走到最南端再折返；以後續甜點店方向為主。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Wenceslas+Square+Prague" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟瓦茨拉夫廣場">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">13:45–14:05</span></td>
+                <td data-label="地點"><span class="place-name">Staropražské Tradiční Trdlo</span><span class="place-meta">原查詢：每日約 10:00–22:00</span></td>
+                <td data-label="建議停留／內容">買一份傳統煙囪捲當作散步小點，建議共食。</td>
+                <td data-label="交通方式"><span class="transport-tag">步行</span><br>約 5–10 分鐘</td>
+                <td data-label="注意事項">後面還有兩間咖啡館，不建議加太多冰淇淋或餡料；邊走邊吃較省時間。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://maps.app.goo.gl/ahfqaRoenV46EzWB7?g_st=il" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟 Staropražské Tradiční Trdlo">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">14:20–15:20</span></td>
+                <td data-label="地點"><span class="place-name">Café Louvre</span><span class="place-meta">Národní；原查詢：平日約 08:00 起</span></td>
+                <td data-label="建議停留／內容">欣賞歷史咖啡館空間，點一杯飲品或一份甜點，坐下休息。</td>
+                <td data-label="交通方式"><span class="transport-tag">步行</span><br>約 12–15 分鐘</td>
+                <td data-label="注意事項"><strong>不必和 Café Imperial 兩間都吃很多。</strong>若等位超過 15 分鐘，改成外觀拍照或縮短至 40 分鐘。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://maps.app.goo.gl/NCSmy2ajs2oKwS8B9?g_st=ic" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟 Café Louvre">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">15:20–15:45</span></td>
+                <td data-label="地點"><span class="place-name">前往 Café Imperial</span><span class="place-meta">Národní třída → Náměstí Republiky</span></td>
+                <td data-label="建議停留／內容">移動與找路緩衝；抵達後若尚未入座，可先拍外觀。</td>
+                <td data-label="交通方式"><span class="transport-tag transit">地鐵 B 線</span><br>2 站＋步行約 5–7 分鐘</td>
+                <td data-label="注意事項">直接使用一日地鐵票；進站前再確認票券仍在有效時間內，並留意正確行車方向。</td>
+                <td data-label="Google Maps"><a class="map-link" href="https://maps.app.goo.gl/G6YKb77J1q9Vjv7y5?g_st=il" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟 Café Imperial">目的地</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">15:45–17:15</span></td>
+                <td data-label="地點"><span class="place-name">Café Imperial</span><span class="place-meta">原查詢：每日約 07:00–23:00</span></td>
+                <td data-label="建議停留／內容">欣賞磁磚與新藝術風格室內，點咖啡、飲品或輕食；最晚 17:15 結帳離開。</td>
+                <td data-label="交通方式"><span class="transport-tag transit">抵達後步行</span><br>自 Náměstí Republiky 約 5–7 分鐘</td>
+                <td data-label="注意事項">若 Café Louvre 已吃甜點，這裡以飲品為主。<strong>17:00 前先結帳，17:15 準時離開。</strong></td>
+                <td data-label="Google Maps"><a class="map-link" href="https://maps.app.goo.gl/G6YKb77J1q9Vjv7y5?g_st=il" target="_blank" rel="noopener noreferrer" aria-label="在 Google Maps 開啟 Café Imperial">開啟地圖</a></td>
+              </tr>
+              <tr>
+                <td data-label="時間"><span class="time-text">17:15–18:00</span></td>
+                <td data-label="地點"><span class="place-name">返回團體集合點</span><span class="place-meta">確切位置以領隊通知為準</span></td>
+                <td data-label="建議停留／內容">預留 45 分鐘移動、找出口與臨時塞車；目標 17:50 前抵達。</td>
+                <td data-label="交通方式"><span class="transport-tag transit">地鐵／電車</span><br>依集合點選擇</td>
+                <td data-label="注意事項"><strong>不要把 Café Imperial 停留拖過 17:15。</strong>出發前先將集合點存入 Google Maps 並截圖。</td>
+                <td data-label="Google Maps"><span class="map-pending">依領隊通知</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="closing-grid shell" aria-label="出發前檢查">
+      <article class="closing-card">
+        <h3>放進隨身包</h3>
+        <ul class="checklist">
+          <li>護照正本與退稅資料</li>
+          <li>有效的一日地鐵票</li>
+          <li>領隊電話、飯店與集合點截圖</li>
+          <li>行動電源與可離線使用的地圖</li>
+        </ul>
+      </article>
+      <article class="closing-card accent">
+        <h3>保持彈性</h3>
+        <p>店家營業時間、排隊情況與大眾運輸可能臨時調整。表內時間是方便跟團銜接的建議節奏；出發前一天請再點開 Google Maps 確認最新資訊。</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell">Prague Free Time Itinerary · 第三、四天隨身版</div>
+  </footer>
+</body>
+</html>
